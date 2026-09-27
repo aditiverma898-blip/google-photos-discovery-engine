@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "backend/api/main.py": {
+      "includeFiles": "{backend/data/discovery_engine.db,backend/data/raw/**,frontend/src/data/stats.json,frontend/dist/**}",
+      "excludeFiles": "{archive/**,scratch/**,docs/**,frontend/tests/**,frontend/node_modules/**,backend/tests/**,backend/data/database.db,**/__pycache__/**}"
+    }
+  }
+}
